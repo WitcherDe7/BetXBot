@@ -36,9 +36,5 @@ def luckydraw(message):
   msg = ( "🎉 Congrats you WON " + str(luckynum) + " SATS")
   bot.send_message(message.chat.id,msg)
 
-@bot.message_handler(commands=["randi"])
-def randi(message):
-  bot.send_message(message.chat.id,"@Shhivamqq is a RANDI")
-
 
 bot.polling()
